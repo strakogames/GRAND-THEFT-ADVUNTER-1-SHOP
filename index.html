@@ -3,151 +3,1002 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#090b12">
+<meta name="theme-color" content="#080808">
 <title>STRAKO GAMES — Official</title>
 <style>
-:root{--bg:#080a10;--panel:#111622;--panel2:#171f2d;--line:#273247;--red:#ed2939;--gold:#f0b94b;--text:#f4f6fb;--muted:#9ba7ba;--green:#5de0a2}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}button,input{font:inherit}button{cursor:pointer}.topbar{position:sticky;top:0;z-index:20;background:#080a10ed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{max-width:1200px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;font-weight:950;letter-spacing:2px}.brandmark{width:39px;height:39px;border:2px solid var(--red);display:grid;place-items:center;transform:skew(-8deg);font-size:22px;color:white;box-shadow:0 0 22px #ed293944}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;margin-top:2px}.navlinks{display:flex;gap:20px;align-items:center}.navlinks a{color:#cbd3e0;text-decoration:none;font-size:13px;font-weight:700}.navlinks a:hover{color:white}.nav-actions{display:flex;gap:9px;align-items:center}.btn{border:1px solid var(--line);background:#151c29;color:white;padding:11px 16px;border-radius:7px;font-weight:800;font-size:12px;letter-spacing:.5px}.btn:hover{border-color:#75839c;transform:translateY(-1px)}.btn-red{background:var(--red);border-color:var(--red);color:white}.btn-gold{background:var(--gold);color:#17120a;border-color:var(--gold)}.menu-toggle{display:none}.hero{min-height:590px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 75% 40%,#6d1425 0%,#25101c 28%,transparent 58%),linear-gradient(115deg,#0b0e17 15%,#111521 65%,#1c1018)}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080a10 0%,#080a10cc 42%,transparent 100%),repeating-linear-gradient(120deg,transparent 0 70px,#ffffff05 71px 72px)}.hero-inner{max-width:1200px;margin:auto;padding:100px 22px 80px;position:relative;z-index:1}.eyebrow{color:var(--red);font-weight:900;letter-spacing:4px;font-size:11px}.hero h1{font-size:clamp(42px,7vw,82px);line-height:.98;margin:18px 0;max-width:750px;letter-spacing:-3px}.hero h1 span{color:var(--red)}.hero p{max-width:560px;color:#b9c2d1;line-height:1.8;font-size:16px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-stats{display:flex;gap:34px;margin-top:54px;flex-wrap:wrap}.stat strong{font-size:21px;display:block}.stat small{font-size:10px;color:var(--muted);letter-spacing:1.5px}.section{max-width:1200px;margin:auto;padding:70px 22px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}.section-head h2{font-size:30px;margin:8px 0 0}.section-head p{color:var(--muted);font-size:13px;margin:0}.game-feature{display:grid;grid-template-columns:1.15fr .85fr;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}.game-art{min-height:360px;position:relative;background:radial-gradient(circle at 50% 42%,#a52c37,#3c1522 43%,#10141f 78%);display:grid;place-items:center;overflow:hidden}.game-art:before{content:"GTA";font-weight:1000;font-size:clamp(85px,15vw,180px);letter-spacing:-12px;color:#ffffff12;position:absolute}.art-logo{position:relative;text-align:center;text-shadow:0 8px 30px #000}.art-logo strong{display:block;font-size:clamp(36px,6vw,68px);line-height:.9;letter-spacing:-2px}.art-logo span{font-size:13px;letter-spacing:8px;color:#ffd2d2}.game-info{padding:34px}.tag{display:inline-block;padding:6px 9px;border:1px solid #73303b;color:#ff8b96;border-radius:4px;font-size:10px;font-weight:900;letter-spacing:1.5px}.game-info h3{font-size:30px;margin:18px 0 10px}.game-info p{color:var(--muted);line-height:1.75;font-size:14px}.meta{display:flex;gap:18px;flex-wrap:wrap;margin:20px 0;color:#cbd3e0;font-size:12px}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:18px 0}.timebox{background:#090d15;border:1px solid var(--line);border-radius:7px;padding:12px 5px;text-align:center}.timebox strong{display:block;font-size:25px;font-variant-numeric:tabular-nums}.timebox small{font-size:9px;color:var(--muted);letter-spacing:1.5px}.release-note{font-size:11px!important;color:var(--gold)!important}.catalog{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.game-card{background:var(--panel);border:1px solid var(--line);border-radius:11px;overflow:hidden}.game-cover{height:160px;display:grid;place-items:center;font-weight:1000;font-size:32px;letter-spacing:2px;background:linear-gradient(135deg,#202b3c,#15101a)}.game-card:nth-child(2) .game-cover{background:linear-gradient(135deg,#173a38,#111b26)}.game-card:nth-child(3) .game-cover{background:linear-gradient(135deg,#49351b,#171521)}.game-card-body{padding:18px}.game-card h3{margin:0 0 8px}.game-card p{font-size:12px;color:var(--muted);line-height:1.6;min-height:40px}.card-foot{display:flex;justify-content:space-between;align-items:center;margin-top:14px}.status{font-size:10px;color:var(--gold);font-weight:900;letter-spacing:1px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}.info-panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:25px}.info-panel h3{margin-top:0}.info-panel p,.info-panel li{color:var(--muted);font-size:13px;line-height:1.8}.steps{padding-left:19px}.account-box{max-width:500px;margin:auto}.field{display:grid;gap:7px;margin:13px 0}.field label{font-size:11px;color:#c4cede;font-weight:800;letter-spacing:1px}.field input{width:100%;padding:13px;background:#080d15;border:1px solid var(--line);border-radius:7px;color:white;outline:none}.field input:focus{border-color:var(--red)}.switch{text-align:center;color:var(--muted);font-size:12px;margin-top:15px}.switch a{color:#ff6c79;cursor:pointer}.hidden{display:none!important}.notice{padding:12px;border:1px solid #315a49;background:#10241d;color:#a4f3cd;border-radius:7px;font-size:12px;margin:12px 0}.warning{border-color:#6b4b24;background:#251b0e;color:#f6d28d}.footer{border-top:1px solid var(--line);padding:35px 22px;color:var(--muted);font-size:11px}.footer-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer strong{color:white;letter-spacing:2px}.modal{position:fixed;inset:0;z-index:50;background:#000b;display:none;place-items:center;padding:20px}.modal.open{display:grid}.modal-box{width:min(480px,100%);background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:25px;position:relative}.close{position:absolute;right:15px;top:12px;background:none;border:0;color:white;font-size:24px}.toast{position:fixed;bottom:20px;right:20px;z-index:80;background:#182333;border:1px solid #40516a;padding:13px 18px;border-radius:8px;font-size:12px;display:none;max-width:330px}.toast.show{display:block}.profile-line{display:flex;align-items:center;gap:9px;font-size:12px;color:#d7dfeb}.avatar{width:30px;height:30px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-weight:900}.release-screen{min-height:75vh;display:none;place-items:center;text-align:center;padding:40px 20px;background:radial-gradient(circle at center,#30121d,#080a10 65%)}.release-screen.active{display:grid}.release-screen h2{font-size:clamp(35px,7vw,68px);margin:15px}.release-screen p{color:var(--muted);max-width:600px;line-height:1.8}.free-label{color:var(--green);font-weight:1000;letter-spacing:3px}.tiny{font-size:10px;color:var(--muted)}
-@media(max-width:800px){.navlinks{display:none;position:absolute;top:66px;left:0;right:0;background:#0b0e16;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu-toggle{display:inline-block}.nav-actions .btn:not(.menu-toggle){padding:9px}.game-feature{grid-template-columns:1fr}.game-art{min-height:260px}.catalog{grid-template-columns:1fr 1fr}.hero{min-height:540px}.hero-inner{padding-top:75px}}@media(max-width:560px){.catalog,.two-col{grid-template-columns:1fr}.section{padding:52px 16px}.hero-inner{padding-left:17px;padding-right:17px}.nav{padding:12px 14px}.brand{font-size:13px}.nav-actions{gap:5px}.nav-actions .btn{font-size:10px;padding:9px}.hero-stats{gap:20px}.game-info{padding:23px}.section-head{display:block}.section-head p{margin-top:8px}}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+:root{
+--bg:#080808;
+--panel:#111;
+--panel2:#191919;
+--line:#303030;
+--red:#e51d2a;
+--red2:#ff3542;
+--white:#f7f7f5;
+--muted:#999;
+--gold:#e8bd68;
+--green:#6ee7a8;
+--max:1350px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+margin:0;background:var(--bg);color:var(--white);
+font-family:'DM Sans',Arial,sans-serif;
+}
+body:before{
+content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+background:radial-gradient(ellipse at 75% 0%,#50101722,transparent 42%)
+}
+button,input{font:inherit}
+button{cursor:pointer}
+.topbar{
+position:sticky;top:0;z-index:30;
+background:#080808ed;border-bottom:1px solid var(--line);
+backdrop-filter:blur(18px)
+}
+.nav{
+max-width:var(--max);margin:auto;padding:13px 26px;
+display:flex;align-items:center;justify-content:space-between;
+gap:22px;min-height:76px
+}
+.brand{
+display:flex;align-items:center;gap:12px;
+text-decoration:none;color:white
+}
+.brandmark{
+width:45px;height:45px;display:grid;place-items:center;
+background:var(--red);clip-path:polygon(12% 0,100% 0,88% 100%,0 100%);
+font-family:'Barlow Condensed';font-size:32px;font-weight:900;
+box-shadow:0 0 28px #e51d2a55
+}
+.brand-name{
+font-family:'Barlow Condensed';font-size:23px;
+font-weight:900;letter-spacing:2px
+}
+.brand small{
+display:block;color:#858585;font-size:9px;
+letter-spacing:3px;margin-top:5px
+}
+.navlinks{display:flex;gap:27px;align-items:center}
+.navlinks a{
+font-size:11px;letter-spacing:1.2px;color:#bbb;
+text-decoration:none;font-weight:800;transition:.2s
+}
+.navlinks a:hover{color:var(--red)}
+.nav-actions{display:flex;gap:10px;align-items:center}
+.btn{
+border:1px solid #393939;background:#171717;color:white;
+padding:13px 19px;font-size:10px;letter-spacing:1.1px;
+font-weight:900;text-transform:uppercase;transition:.22s;
+display:inline-flex;align-items:center;justify-content:center;
+gap:8px;text-decoration:none;
+clip-path:polygon(0 0,100% 0,100% 75%,91% 100%,0 100%)
+}
+.btn:hover{
+border-color:#777;transform:translateY(-3px);background:#222
+}
+.btn-red{
+background:var(--red);border-color:var(--red);
+box-shadow:0 7px 28px #e51d2a35
+}
+.btn-red:hover{
+background:var(--red2);border-color:var(--red2);
+box-shadow:0 8px 35px #e51d2a66
+}
+.menu-toggle{display:none}
+
+/* HERO */
+.hero{
+min-height:700px;position:relative;overflow:hidden;
+background:
+linear-gradient(90deg,#080808 0%,#080808ee 37%,#08080855 75%,#08080888),
+radial-gradient(ellipse at 77% 45%,#85121f 0%,#3b0d15 30%,#080808 76%)
+}
+.hero:before{
+content:"";position:absolute;inset:0;
+background:repeating-linear-gradient(115deg,transparent 0 95px,#ffffff08 96px 97px)
+}
+.hero:after{
+content:"S";position:absolute;right:8%;top:-120px;
+font-family:'Barlow Condensed';font-size:720px;
+font-weight:900;color:#ffffff08;transform:skew(-9deg)
+}
+.hero-inner{
+max-width:var(--max);margin:auto;padding:125px 26px 80px;
+position:relative;z-index:2
+}
+.eyebrow{
+display:flex;align-items:center;gap:11px;
+color:#ff5964;font-size:10px;font-weight:900;
+letter-spacing:3.5px;text-transform:uppercase
+}
+.eyebrow:before{
+content:"";width:28px;height:2px;background:var(--red)
+}
+.hero h1{
+font-family:'Barlow Condensed',Impact,sans-serif;
+font-size:clamp(76px,10vw,145px);
+line-height:.78;letter-spacing:-2px;
+margin:28px 0 24px;text-transform:uppercase;
+font-weight:900
+}
+.hero h1 span{color:var(--red);text-shadow:0 0 42px #e51d2a55}
+.hero p{
+max-width:570px;color:#bbb;line-height:1.9;font-size:14px
+}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.hero-stats{display:flex;margin-top:70px;flex-wrap:wrap}
+.stat{padding:0 30px;border-left:1px solid #414141}
+.stat:first-child{padding-left:0;border:0}
+.stat strong{
+font-family:'Barlow Condensed';font-size:28px;display:block
+}
+.stat small{
+font-size:9px;color:#888;letter-spacing:2px;font-weight:800
+}
+
+/* MOVING BAR */
+.ticker{
+overflow:hidden;border-top:1px solid #292929;
+border-bottom:1px solid #292929;background:#101010
+}
+.ticker-track{
+display:flex;gap:38px;white-space:nowrap;
+padding:15px 0;min-width:max-content;
+animation:marquee 28s linear infinite
+}
+.ticker span{
+font-family:'Barlow Condensed';font-size:15px;
+font-weight:800;letter-spacing:2px;color:#aaa
+}
+.ticker b{color:var(--red);padding-right:38px}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+.section{
+max-width:var(--max);margin:auto;padding:90px 26px
+}
+.section-head{
+display:flex;justify-content:space-between;
+align-items:end;gap:20px;margin-bottom:32px
+}
+.section-head h2{
+font-family:'Barlow Condensed';font-size:51px;
+line-height:1;margin:12px 0 0;text-transform:uppercase
+}
+.section-head p{color:#858585;font-size:12px;margin:0}
+
+/* FEATURED GAME */
+.game-feature{
+display:grid;grid-template-columns:1.1fr .9fr;
+background:#101010;border:1px solid #303030;
+min-height:440px;overflow:hidden
+}
+.game-art{
+min-height:440px;position:relative;
+display:grid;place-items:center;overflow:hidden;
+background:radial-gradient(ellipse at 50% 44%,#a8202d,#54101b 38%,#101010 100%)
+}
+.game-art:before{
+content:"GTA";position:absolute;
+font-family:'Barlow Condensed';
+font-size:clamp(170px,25vw,350px);
+font-weight:900;color:#ffffff0d;transform:rotate(-8deg)
+}
+.game-art:after{
+content:"";position:absolute;inset:0;
+background:repeating-linear-gradient(130deg,transparent 0 35px,#ffffff08 36px 37px);
+}
+.art-logo{
+position:relative;text-align:center;
+text-shadow:0 8px 35px #000;z-index:1;transform:rotate(-4deg)
+}
+.art-logo strong{
+display:block;font-family:'Barlow Condensed';
+font-size:clamp(48px,7vw,90px);line-height:.78;
+font-weight:900
+}
+.art-logo span{
+display:inline-block;margin-top:20px;
+font-size:10px;letter-spacing:7px;color:#ffd4d7
+}
+.game-info{
+padding:45px 42px;display:flex;
+flex-direction:column;justify-content:center
+}
+.tag{
+display:inline-flex;align-self:flex-start;padding:8px 11px;
+border-left:3px solid var(--red);background:#e51d2a18;
+color:#ff727b;font-size:9px;font-weight:900;letter-spacing:1.7px
+}
+.game-info h3{
+font-family:'Barlow Condensed';font-size:43px;
+line-height:.98;margin:20px 0 12px;text-transform:uppercase
+}
+.game-info p{color:#999;line-height:1.8;font-size:13px}
+.meta{
+display:flex;gap:18px;flex-wrap:wrap;
+margin:19px 0;color:#d0d0d0;font-size:10px;font-weight:700
+}
+.countdown{
+display:grid;grid-template-columns:repeat(4,1fr);
+gap:8px;margin:15px 0
+}
+.timebox{
+background:#090909;border:1px solid #303030;
+padding:13px 5px;text-align:center;position:relative
+}
+.timebox:after{
+content:"";position:absolute;left:0;top:0;
+width:20px;height:2px;background:var(--red)
+}
+.timebox strong{
+display:block;font-family:'Barlow Condensed';
+font-size:35px;font-variant-numeric:tabular-nums
+}
+.timebox small{
+font-size:8px;color:#888;letter-spacing:1.7px;font-weight:900
+}
+.release-note{
+font-size:10px!important;color:var(--gold)!important;
+font-weight:900;letter-spacing:.8px
+}
+.tiny{font-size:10px;color:#777}
+.game-info .btn{align-self:flex-start;margin-top:7px}
+
+/* CATALOG */
+.catalog{
+display:grid;grid-template-columns:repeat(3,1fr);gap:18px
+}
+.game-card{
+background:#111;border:1px solid #292929;
+overflow:hidden;transition:.25s;position:relative
+}
+.game-card:hover{
+transform:translateY(-6px);border-color:#8b3038;
+box-shadow:0 15px 45px #0008
+}
+.game-cover{
+height:200px;display:grid;place-items:center;
+position:relative;overflow:hidden;
+font-family:'Barlow Condensed';font-size:43px;
+font-weight:900;letter-spacing:2px;
+background:radial-gradient(circle at 70% 35%,#77303a,#211015 65%,#111)
+}
+.game-cover:before{
+content:"";position:absolute;inset:0;
+background:repeating-linear-gradient(130deg,transparent 0 35px,#ffffff08 36px 37px)
+}
+.game-cover:after{
+content:"";position:absolute;bottom:-35px;right:15px;
+font-size:150px;color:#ffffff0a;font-weight:900
+}
+.game-card:nth-child(2) .game-cover{
+background:radial-gradient(circle at 70% 35%,#24665d,#10201f 65%,#101010)
+}
+.game-card:nth-child(3) .game-cover{
+background:radial-gradient(circle at 70% 35%,#81612d,#241d12 65%,#101010)
+}
+.game-card-body{padding:22px}
+.game-card h3{
+font-family:'Barlow Condensed';font-size:27px;
+margin:10px 0;text-transform:uppercase
+}
+.game-card p{font-size:11px;color:#999;line-height:1.8;min-height:42px}
+.card-foot{
+display:flex;justify-content:space-between;
+align-items:center;margin-top:18px;
+padding-top:15px;border-top:1px solid #292929;gap:10px
+}
+.status{font-size:9px;color:var(--gold);font-weight:900;letter-spacing:1.3px}
+
+/* ABOUT */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.info-panel{
+background:#111;border:1px solid #292929;
+padding:30px;position:relative
+}
+.info-panel:before{
+content:"";position:absolute;left:0;top:0;
+width:45px;height:2px;background:var(--red)
+}
+.info-panel h3{
+font-family:'Barlow Condensed';font-size:29px;
+text-transform:uppercase;margin:0 0 14px
+}
+.info-panel p,.info-panel li{
+color:#999;font-size:12px;line-height:1.9
+}
+.steps{padding-left:19px}
+
+/* ACCOUNT */
+.account-box{max-width:570px;margin:auto}
+.field{display:grid;gap:7px;margin:14px 0}
+.field label{
+font-size:9px;color:#bbb;font-weight:900;letter-spacing:1.5px
+}
+.field input{
+width:100%;padding:14px;background:#090909;
+border:1px solid #333;color:white;outline:none
+}
+.field input:focus{border-color:var(--red)}
+.switch{text-align:center;color:#888;font-size:11px;margin-top:16px}
+.switch a{color:#ff6b75;cursor:pointer;font-weight:800}
+.hidden{display:none!important}
+.notice{
+padding:13px;border:1px solid #315a49;
+background:#10241d;color:#a4f3cd;font-size:11px;margin:12px 0
+}
+
+/* FOOTER */
+.footer{
+border-top:1px solid #292929;padding:42px 26px;
+color:#777;font-size:10px;background:#090909
+}
+.footer-inner{
+max-width:var(--max);margin:auto;
+display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap
+}
+.footer strong{
+font-family:'Barlow Condensed';font-size:24px;
+color:white;letter-spacing:2px
+}
+
+/* MODAL */
+.modal{
+position:fixed;inset:0;z-index:60;background:#000d;
+display:none;place-items:center;padding:20px;
+backdrop-filter:blur(8px)
+}
+.modal.open{display:grid}
+.modal-box{
+width:min(480px,100%);background:#111;
+border:1px solid #444;padding:30px;position:relative
+}
+.close{
+position:absolute;right:15px;top:10px;
+background:none;border:0;color:white;font-size:25px
+}
+.toast{
+position:fixed;bottom:20px;right:20px;z-index:80;
+background:#171717;border:1px solid #555;
+padding:14px 18px;font-size:11px;display:none;max-width:340px
+}
+.toast.show{display:block}
+.profile-line{
+display:flex;align-items:center;gap:9px;font-size:11px;color:#ddd
+}
+.avatar{
+width:31px;height:31px;background:var(--red);
+display:grid;place-items:center;font-weight:900
+}
+
+/* RELEASE */
+.release-screen{
+min-height:75vh;display:none;place-items:center;
+text-align:center;padding:40px 20px;
+background:radial-gradient(circle at center,#351018,#080808 65%)
+}
+.release-screen.active{display:grid}
+.release-screen h2{
+font-family:'Barlow Condensed';
+font-size:clamp(48px,8vw,90px);line-height:.83;margin:20px
+}
+.release-screen p{color:#999;max-width:600px;line-height:1.8;font-size:13px}
+.free-label{
+color:var(--green);font-weight:1000;letter-spacing:3px;font-size:10px
+}
+
+@media(max-width:850px){
+.navlinks{
+display:none;position:absolute;top:76px;left:0;right:0;
+background:#090909;padding:22px;flex-direction:column;
+border-bottom:1px solid var(--line)
+}
+.navlinks.open{display:flex}
+.menu-toggle{display:inline-flex}
+.game-feature{grid-template-columns:1fr}
+.game-art{min-height:300px}
+.game-info{padding:32px}
+.catalog{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:580px){
+.catalog,.two-col{grid-template-columns:1fr}
+.section{padding:62px 17px}
+.hero-inner{padding:80px 18px 55px}
+.hero h1{font-size:clamp(65px,18vw,100px)}
+.nav{padding:11px 15px;min-height:68px}
+.brand-name{font-size:19px}
+.nav-actions .btn{padding:10px;font-size:9px}
+.section-head{display:block}
+.section-head p{margin-top:10px}
+.section-head h2{font-size:42px}
+.hero-stats{margin-top:48px}
+.stat{padding:0 14px}
+.stat strong{font-size:22px}
+.game-info{padding:25px 19px}
+.game-info h3{font-size:36px}
+.countdown{gap:5px}
+.timebox strong{font-size:29px}
+.game-art{min-height:260px}
+}
 </style>
 </head>
 <body>
+
 <header class="topbar">
- <nav class="nav">
-  <a class="brand" href="#home" style="text-decoration:none;color:white"><span class="brandmark">S</span><span>STRAKO GAMES<small>OFFICIAL GAME STUDIO</small></span></a>
-  <div class="navlinks" id="navlinks"><a href="#home">HOME</a><a href="#games">GAMES</a><a href="#preorders">PRE-ORDERS</a><a href="#about">ABOUT</a></div>
-  <div class="nav-actions"><div id="userSlot"><button class="btn" onclick="openAuth()">SIGN IN</button></div><button class="btn menu-toggle" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button></div>
- </nav>
+<nav class="nav">
+<a class="brand" href="#home">
+<span class="brandmark">S</span>
+<span class="brand-name">STRAKO GAMES<small>OFFICIAL GAME STUDIO</small></span>
+</a>
+
+<div class="navlinks" id="navlinks">
+<a href="#home">HOME</a>
+<a href="#games">GAMES</a>
+<a href="#preorders">PRE-ORDERS</a>
+<a href="#about">STUDIO</a>
+</div>
+
+<div class="nav-actions">
+<div id="userSlot">
+<button class="btn" onclick="openAuth()">SIGN IN</button>
+</div>
+<button class="btn menu-toggle" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+</div>
+</nav>
 </header>
 
 <main id="mainSite">
-<section class="hero" id="home"><div class="hero-inner">
- <div class="eyebrow">INDEPENDENT GAME STUDIO · EST. 2024</div>
- <h1>PLAY BEYOND<br><span>LIMITS.</span></h1>
- <p>Welcome to STRAKO GAMES. Discover our worlds, explore upcoming releases and join the community. Your next adventure starts here.</p>
- <div class="hero-buttons"><a class="btn btn-red" href="#games" style="text-decoration:none">EXPLORE GAMES ↗</a><a class="btn" href="#preorders" style="text-decoration:none">UPCOMING RELEASES</a></div>
- <div class="hero-stats"><div class="stat"><strong>STRAKO</strong><small>GAME STUDIO</small></div><div class="stat"><strong>2024</strong><small>ESTABLISHED</small></div><div class="stat"><strong>PC</strong><small>PLATFORM</small></div></div>
-</div></section>
+
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="eyebrow">INDEPENDENT GAME STUDIO · EST. 2024</div>
+
+<h1>PLAY BEYOND<br><span>LIMITS.</span></h1>
+
+<p>
+Welcome to STRAKO GAMES. Discover original worlds,
+explore upcoming releases and join the next generation
+of independent gaming. Your next adventure starts here.
+</p>
+
+<div class="hero-buttons">
+<a class="btn btn-red" href="#games">EXPLORE GAMES ↗</a>
+<a class="btn" href="#preorders">VIEW THE NEXT RELEASE</a>
+</div>
+
+<div class="hero-stats">
+<div class="stat"><strong>STRAKO</strong><small>GAME STUDIO</small></div>
+<div class="stat"><strong>2024</strong><small>ESTABLISHED</small></div>
+<div class="stat"><strong>PC</strong><small>PLATFORM</small></div>
+</div>
+</div>
+</section>
+
+<div class="ticker">
+<div class="ticker-track">
+<span>
+STRAKO GAMES <b>✦</b> ORIGINAL WORLDS <b>✦</b>
+BUILT FOR PLAYERS <b>✦</b> NEXT LEVEL GAMING <b>✦</b>
+STRAKO GAMES <b>✦</b> ORIGINAL WORLDS <b>✦</b>
+BUILT FOR PLAYERS <b>✦</b> NEXT LEVEL GAMING <b>✦</b>
+</span>
+</div>
+</div>
 
 <div id="releaseScreen" class="release-screen">
- <div><div class="free-label">OFFICIAL RELEASE · FREE TO PLAY</div><h2>GRAND THEFT<br>ADVENTURE 1</h2><p>The release window is open. This game is available for free. Continue to the game page below.</p><button class="btn btn-red" onclick="openGamePage()">OPEN GAME PAGE ↗</button><p class="tiny">The game page link can be configured by the site owner in the HTML code.</p><button class="btn" onclick="showMain()">BACK TO STRAKO GAMES</button></div>
+<div>
+<div class="free-label">OFFICIAL RELEASE · FREE TO PLAY</div>
+<h2>GRAND THEFT<br>ADVENTURE 1</h2>
+<p>The release window is open. This game is available for free. Continue to the game page below.</p>
+<button class="btn btn-red" onclick="openGamePage()">OPEN GAME PAGE ↗</button>
+<p class="tiny">Configure the game page URL in the HTML code.</p>
+<button class="btn" onclick="showMain()">BACK TO STRAKO GAMES</button>
+</div>
 </div>
 
 <div id="siteContent">
+
 <section class="section" id="preorders">
- <div class="section-head"><div><div class="eyebrow">FEATURED RELEASE</div><h2>PRE-ORDER NOW</h2></div><p>Reserve your place. No payment required.</p></div>
- <div class="game-feature">
-  <div class="game-art"><div class="art-logo"><strong>GRAND THEFT<br>ADVENTURE</strong><span>THE OPEN WORLD</span></div></div>
-  <div class="game-info"><span class="tag">COMING SOON · PC</span><h3>GRAND THEFT ADVENTURE 1</h3><p>Enter a living open-world city, explore its streets, drive vehicles and create your own story. An original STRAKO GAMES project.</p>
-   <div class="meta"><span>◈ Open World</span><span>◈ Single Player</span><span>◈ PC / Browser</span></div>
-   <div id="countdownArea"><div class="tiny">OFFICIAL RELEASE COUNTDOWN · MOROCCO TIME</div><div class="countdown"><div class="timebox"><strong id="days">001</strong><small>DAYS</small></div><div class="timebox"><strong id="hours">00</strong><small>HOURS</small></div><div class="timebox"><strong id="minutes">00</strong><small>MINUTES</small></div><div class="timebox"><strong id="seconds">00</strong><small>SECONDS</small></div></div></div>
-   <p class="release-note">RELEASE: 21 NOVEMBER 2026 · 00:00 (UTC+1 MOROCCO)</p>
-   <button class="btn btn-red" id="preorderBtn" onclick="preorder()">PRE-ORDER FOR FREE</button>
-   <div class="tiny" style="margin-top:10px">Pre-order is a free local registration. No payment or card details.</div>
-  </div>
- </div>
+<div class="section-head">
+<div>
+<div class="eyebrow">THE NEXT BIG ADVENTURE</div>
+<h2>FEATURED RELEASE</h2>
+</div>
+<p>Reserve your place. No payment required.</p>
+</div>
+
+<div class="game-feature">
+
+<div class="game-art">
+<div class="art-logo">
+<strong>GRAND THEFT<br>ADVENTURE</strong>
+<span>THE OPEN WORLD</span>
+</div>
+</div>
+
+<div class="game-info">
+<span class="tag">COMING SOON · PC</span>
+<h3>GRAND THEFT ADVENTURE 1</h3>
+
+<p>
+Enter a living open-world city, explore its streets,
+drive vehicles and create your own story.
+An original STRAKO GAMES project.
+</p>
+
+<div class="meta">
+<span>◈ OPEN WORLD</span>
+<span>◈ SINGLE PLAYER</span>
+<span>◈ PC / BROWSER</span>
+</div>
+
+<div id="countdownArea">
+<div class="tiny">OFFICIAL RELEASE COUNTDOWN · MOROCCO TIME</div>
+<div class="countdown">
+<div class="timebox"><strong id="days">000</strong><small>DAYS</small></div>
+<div class="timebox"><strong id="hours">00</strong><small>HOURS</small></div>
+<div class="timebox"><strong id="minutes">00</strong><small>MINUTES</small></div>
+<div class="timebox"><strong id="seconds">00</strong><small>SECONDS</small></div>
+</div>
+</div>
+
+<p class="release-note">
+PRE-ORDER / RELEASE: 22 NOVEMBER 2026 · 00:00 (UTC+1 MOROCCO)
+</p>
+
+<button class="btn btn-red" id="preorderBtn" onclick="preorder()">
+PRE-ORDER FOR FREE ↗
+</button>
+
+<div class="tiny" style="margin-top:11px">
+Free local registration · No payment or card details required.
+</div>
+</div>
+</div>
 </section>
 
 <section class="section" id="games">
- <div class="section-head"><div><div class="eyebrow">DISCOVER OUR WORLD</div><h2>GAMES CATALOG</h2></div><p>Explore the STRAKO GAMES lineup.</p></div>
- <div class="catalog" id="gamesCatalog"></div>
+<div class="section-head">
+<div>
+<div class="eyebrow">DISCOVER OUR WORLDS</div>
+<h2>GAMES CATALOG</h2>
+</div>
+<p>Explore the STRAKO GAMES lineup.</p>
+</div>
+<div class="catalog" id="gamesCatalog"></div>
 </section>
 
 <section class="section" id="about">
- <div class="section-head"><div><div class="eyebrow">THE STUDIO</div><h2>BUILT FOR PLAYERS.</h2></div></div>
- <div class="two-col">
-  <div class="info-panel"><h3>About STRAKO GAMES</h3><p>STRAKO GAMES is an independent game studio identity focused on creating original interactive experiences. This official website is the central place for studio news, game announcements and release information.</p><p class="tiny">All game titles, dates and availability shown here are studio announcements and may be updated by the site owner.</p></div>
-  <div class="info-panel"><h3>How to get a game</h3><ol class="steps"><li>Browse the games catalog.</li><li>Open a game's details and check its release status.</li><li>For upcoming releases, use the free pre-order option.</li><li>When a game is released, open its official game page.</li></ol></div>
- </div>
+<div class="section-head">
+<div>
+<div class="eyebrow">WHO WE ARE</div>
+<h2>BUILT FOR PLAYERS.</h2>
+</div>
+</div>
+
+<div class="two-col">
+<div class="info-panel">
+<h3>About STRAKO GAMES</h3>
+<p>
+STRAKO GAMES is an independent game studio identity
+focused on creating original interactive experiences.
+This official website is the central place for studio news,
+game announcements and release information.
+</p>
+<p class="tiny">
+All game titles, dates and availability shown here are
+studio announcements and may be updated by the site owner.
+</p>
+</div>
+
+<div class="info-panel">
+<h3>How to get a game</h3>
+<ol class="steps">
+<li>Browse the games catalog.</li>
+<li>Open a game's details and check its release status.</li>
+<li>For upcoming releases, use the free pre-order option.</li>
+<li>When a game is released, open its official game page.</li>
+</ol>
+</div>
+</div>
 </section>
 
 <section class="section" id="account">
- <div class="section-head"><div><div class="eyebrow">PLAYER AREA</div><h2>YOUR ACCOUNT</h2></div></div>
- <div class="info-panel account-box" id="accountPanel"><h3>Join STRAKO GAMES</h3><p>Create a local player profile to save your pre-orders on this browser.</p><button class="btn btn-red" onclick="openAuth()">CREATE ACCOUNT / SIGN IN</button><p class="tiny">Accounts are stored only in this browser using localStorage. They are not synced across devices and are not secure server accounts.</p></div>
+<div class="section-head">
+<div>
+<div class="eyebrow">PLAYER AREA</div>
+<h2>YOUR ACCOUNT</h2>
+</div>
+</div>
+
+<div class="info-panel account-box" id="accountPanel">
+<h3>Join STRAKO GAMES</h3>
+<p>Create a local player profile to save your pre-orders on this browser.</p>
+<button class="btn btn-red" onclick="openAuth()">CREATE ACCOUNT / SIGN IN</button>
+<p class="tiny">
+Accounts are stored only in this browser using localStorage.
+They are not synced across devices and are not secure server accounts.
+</p>
+</div>
 </section>
+
 </div>
 </main>
 
-<footer class="footer"><div class="footer-inner"><div><strong>STRAKO GAMES</strong><p>OFFICIAL WEBSITE · INDEPENDENT GAME STUDIO</p></div><div>© 2026 STRAKO GAMES. All rights reserved.<p>All trademarks belong to their respective owners.</p></div></div></footer>
+<footer class="footer">
+<div class="footer-inner">
+<div>
+<strong>STRAKO GAMES</strong>
+<p>OFFICIAL WEBSITE · INDEPENDENT GAME STUDIO</p>
+</div>
+<div>
+© 2026 STRAKO GAMES. All rights reserved.
+<p>All trademarks belong to their respective owners.</p>
+</div>
+</div>
+</footer>
 
-<div class="modal" id="authModal"><div class="modal-box"><button class="close" onclick="closeAuth()">×</button><div class="eyebrow">PLAYER ACCOUNT</div><h2 id="authTitle">CREATE ACCOUNT</h2><div id="authMessage"></div>
- <div class="field"><label>USERNAME</label><input id="authName" maxlength="20" placeholder="Your username"></div>
- <div class="field"><label>PASSWORD</label><input id="authPass" type="password" maxlength="60" placeholder="At least 4 characters"></div>
- <button class="btn btn-red" style="width:100%" onclick="submitAuth()">CREATE ACCOUNT</button>
- <div class="switch"><span id="switchText">Already have an account?</span> <a onclick="toggleAuthMode()" id="switchLink">Sign in</a></div>
- <p class="tiny">DEMO LOCAL ACCOUNT: data stays in this browser only. Do not use a real or reused password.</p>
-</div></div>
+<div class="modal" id="authModal">
+<div class="modal-box">
+<button class="close" onclick="closeAuth()">×</button>
+<div class="eyebrow">PLAYER ACCOUNT</div>
+<h2 id="authTitle" style="font-family:'Barlow Condensed';font-size:38px">CREATE ACCOUNT</h2>
+<div id="authMessage"></div>
+
+<div class="field">
+<label>USERNAME</label>
+<input id="authName" maxlength="20" placeholder="Your username">
+</div>
+
+<div class="field">
+<label>PASSWORD</label>
+<input id="authPass" type="password" maxlength="60" placeholder="At least 4 characters">
+</div>
+
+<button class="btn btn-red" style="width:100%" onclick="submitAuth()">CREATE ACCOUNT</button>
+
+<div class="switch">
+<span id="switchText">Already have an account?</span>
+<a onclick="toggleAuthMode()" id="switchLink">Sign in</a>
+</div>
+
+<p class="tiny">
+DEMO LOCAL ACCOUNT: data stays in this browser only.
+Do not use a real or reused password.
+</p>
+</div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
-/* ============================================================
+/* ==========================================
    STRAKO GAMES — OWNER CONFIGURATION
-   Add games by editing the GAMES array below.
-   Change RELEASE_GAME_URL to your actual game page URL.
-   ============================================================ */
-const RELEASE_AT = "2026-11-21T00:00:00+01:00";
-const RELEASE_GAME_URL = ""; // Example: "https://yourusername.github.io/your-game/"
+========================================== */
+
+const RELEASE_AT = "2026-11-22T00:00:00+01:00";
+
+/* ADD YOUR GAME URL HERE */
+const RELEASE_GAME_URL = "";
+
 const GAMES = [
- {id:"gta1",name:"GRAND THEFT ADVENTURE 1",genre:"OPEN WORLD · ACTION",platform:"PC / BROWSER",status:"PRE-ORDER",description:"Explore a city, drive vehicles and build your own open-world story.",cover:"GRAND THEFT"},
- {id:"botwars",name:"BOT WARS",genre:"FPS · COMBAT",platform:"PC",status:"COMING SOON",description:"Enter the combat zone and face waves of enemy bots.",cover:"BOT WARS"},
- {id:"gcl",name:"GRAND CITY LIFE",genre:"CITY · SIMULATION",platform:"PC",status:"IN DEVELOPMENT",description:"Build your life in a large city filled with activities and opportunities.",cover:"GRAND CITY"}
+{
+id:"gta1",
+name:"GRAND THEFT ADVENTURE 1",
+genre:"OPEN WORLD · ACTION",
+platform:"PC / BROWSER",
+status:"PRE-ORDER",
+description:"Explore a city, drive vehicles and build your own open-world story.",
+cover:"GRAND THEFT"
+},
+{
+id:"botwars",
+name:"BOT WARS",
+genre:"FPS · COMBAT",
+platform:"PC",
+status:"COMING SOON",
+description:"Enter the combat zone and face waves of enemy bots.",
+cover:"BOT WARS"
+},
+{
+id:"gcl",
+name:"GRAND CITY LIFE",
+genre:"CITY · SIMULATION",
+platform:"PC",
+status:"IN DEVELOPMENT",
+description:"Build your life in a large city filled with activities and opportunities.",
+cover:"GRAND CITY"
+}
 ];
-let authMode = "register";
-let currentUser = localStorage.getItem("strako_current_user") || "";
-const $ = id => document.getElementById(id);
-function toast(message){$("toast").textContent=message;$("toast").classList.add("show");setTimeout(()=>$("toast").classList.remove("show"),3200)}
+
+let authMode="register";
+let currentUser=localStorage.getItem("strako_current_user")||"";
+
+const $=id=>document.getElementById(id);
+
+function toast(message){
+$("toast").textContent=message;
+$("toast").classList.add("show");
+setTimeout(()=>$("toast").classList.remove("show"),3200);
+}
+
+function escapeHTML(s){
+return String(s).replace(/[&<>"']/g,c=>({
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;",
+"'":"&#39;"
+}[c]));
+}
+
 function renderGames(){
- $("gamesCatalog").innerHTML=GAMES.map(g=>`<article class="game-card"><div class="game-cover">${escapeHTML(g.cover)}</div><div class="game-card-body"><div class="tiny">${escapeHTML(g.genre)} · ${escapeHTML(g.platform)}</div><h3>${escapeHTML(g.name)}</h3><p>${escapeHTML(g.description)}</p><div class="card-foot"><span class="status">${escapeHTML(g.status)}</span><button class="btn" onclick="gameAction('${g.id}')">VIEW DETAILS</button></div></div></article>`).join("");
+$("gamesCatalog").innerHTML=GAMES.map(g=>`
+<article class="game-card">
+<div class="game-cover">${escapeHTML(g.cover)}</div>
+<div class="game-card-body">
+<div class="tiny">${escapeHTML(g.genre)} · ${escapeHTML(g.platform)}</div>
+<h3>${escapeHTML(g.name)}</h3>
+<p>${escapeHTML(g.description)}</p>
+<div class="card-foot">
+<span class="status">${escapeHTML(g.status)}</span>
+<button class="btn" onclick="gameAction('${g.id}')">VIEW DETAILS</button>
+</div>
+</div>
+</article>
+`).join("");
 }
-function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
-function getUsers(){try{return JSON.parse(localStorage.getItem("strako_users")||"{}")}catch(e){return {}}}
-function saveUsers(users){localStorage.setItem("strako_users",JSON.stringify(users))}
+
+function getUsers(){
+try{
+return JSON.parse(localStorage.getItem("strako_users")||"{}");
+}catch(e){
+return {};
+}
+}
+
+function saveUsers(users){
+localStorage.setItem("strako_users",JSON.stringify(users));
+}
+
 function updateUserUI(){
- const slot=$("userSlot"),panel=$("accountPanel");
- if(currentUser){slot.innerHTML=`<div class="profile-line"><span class="avatar">${escapeHTML(currentUser[0].toUpperCase())}</span><span>${escapeHTML(currentUser)}</span><button class="btn" onclick="logout()">LOG OUT</button></div>`;
- const orders=JSON.parse(localStorage.getItem("strako_orders")||"{}");
- panel.innerHTML=`<h3>Welcome, ${escapeHTML(currentUser)}</h3><p>Your player profile is active on this browser.</p><div class="notice">Your pre-orders: ${orders[currentUser]?.includes("gta1")?"GRAND THEFT ADVENTURE 1":"No pre-orders yet"}</div><button class="btn" onclick="logout()">SIGN OUT</button>`;
- }else{slot.innerHTML='<button class="btn" onclick="openAuth()">SIGN IN</button>';panel.innerHTML='<h3>Join STRAKO GAMES</h3><p>Create a local player profile to save your pre-orders on this browser.</p><button class="btn btn-red" onclick="openAuth()">CREATE ACCOUNT / SIGN IN</button><p class="tiny">Accounts are stored only in this browser using localStorage. They are not synced across devices and are not secure server accounts.</p>'}
+const slot=$("userSlot");
+const panel=$("accountPanel");
+
+if(currentUser){
+
+slot.innerHTML=`
+<div class="profile-line">
+<span class="avatar">${escapeHTML(currentUser[0].toUpperCase())}</span>
+<span>${escapeHTML(currentUser)}</span>
+<button class="btn" onclick="logout()">LOG OUT</button>
+</div>`;
+
+let orders={};
+try{
+orders=JSON.parse(localStorage.getItem("strako_orders")||"{}");
+}catch(e){}
+
+panel.innerHTML=`
+<h3>Welcome, ${escapeHTML(currentUser)}</h3>
+<p>Your player profile is active on this browser.</p>
+<div class="notice">
+Your pre-orders:
+${orders[currentUser]?.includes("gta1")
+?"GRAND THEFT ADVENTURE 1"
+:"No pre-orders yet"}
+</div>
+<button class="btn" onclick="logout()">SIGN OUT</button>
+`;
+
+}else{
+
+slot.innerHTML='<button class="btn" onclick="openAuth()">SIGN IN</button>';
+
+panel.innerHTML=`
+<h3>Join STRAKO GAMES</h3>
+<p>Create a local player profile to save your pre-orders on this browser.</p>
+<button class="btn btn-red" onclick="openAuth()">CREATE ACCOUNT / SIGN IN</button>
+<p class="tiny">Accounts are stored only in this browser using localStorage. They are not synced across devices and are not secure server accounts.</p>
+`;
 }
-function openAuth(){ $("authModal").classList.add("open");$("authMessage").innerHTML=""; }
-function closeAuth(){$("authModal").classList.remove("open")}
-function toggleAuthMode(){authMode=authMode==="register"?"login":"register";$("authTitle").textContent=authMode==="register"?"CREATE ACCOUNT":"SIGN IN";$("switchText").textContent=authMode==="register"?"Already have an account?":"New to STRAKO GAMES?";$("switchLink").textContent=authMode==="register"?"Sign in":"Create account";document.querySelector("#authModal .modal-box .btn-red").textContent=authMode==="register"?"CREATE ACCOUNT":"SIGN IN"}
+}
+
+function openAuth(){
+$("authModal").classList.add("open");
+$("authMessage").innerHTML="";
+}
+
+function closeAuth(){
+$("authModal").classList.remove("open");
+}
+
+function toggleAuthMode(){
+authMode=authMode==="register"?"login":"register";
+
+$("authTitle").textContent=authMode==="register"?"CREATE ACCOUNT":"SIGN IN";
+
+$("switchText").textContent=authMode==="register"
+?"Already have an account?"
+:"New to STRAKO GAMES?";
+
+$("switchLink").textContent=authMode==="register"
+?"Sign in"
+:"Create account";
+
+document.querySelector("#authModal .modal-box .btn-red").textContent=
+authMode==="register"?"CREATE ACCOUNT":"SIGN IN";
+}
+
 function submitAuth(){
- const name=$("authName").value.trim(),pass=$("authPass").value;
- if(!/^[a-zA-Z0-9_]{3,20}$/.test(name)){toast("Username must be 3–20 letters, numbers or underscores.");return}
- if(pass.length<4){toast("Password must contain at least 4 characters.");return}
- const users=getUsers();
- if(authMode==="register"){
-  if(users[name]){toast("This username already exists.");return}
-  users[name]={password:pass,created:new Date().toISOString()};saveUsers(users);toast("Account created successfully.");
- }else{
-  if(!users[name]||users[name].password!==pass){toast("Incorrect username or password.");return}
-  toast("Welcome back.");
- }
- currentUser=name;localStorage.setItem("strako_current_user",name);updateUserUI();closeAuth();
+
+const name=$("authName").value.trim();
+const pass=$("authPass").value;
+
+if(!/^[a-zA-Z0-9_]{3,20}$/.test(name)){
+toast("Username must be 3–20 letters, numbers or underscores.");
+return;
 }
-function logout(){currentUser="";localStorage.removeItem("strako_current_user");updateUserUI();toast("You have signed out.")}
+
+if(pass.length<4){
+toast("Password must contain at least 4 characters.");
+return;
+}
+
+const users=getUsers();
+
+if(authMode==="register"){
+
+if(users[name]){
+toast("This username already exists.");
+return;
+}
+
+users[name]={
+password:pass,
+created:new Date().toISOString()
+};
+
+saveUsers(users);
+toast("Account created successfully.");
+
+}else{
+
+if(!users[name]||users[name].password!==pass){
+toast("Incorrect username or password.");
+return;
+}
+
+toast("Welcome back.");
+}
+
+currentUser=name;
+localStorage.setItem("strako_current_user",name);
+updateUserUI();
+closeAuth();
+}
+
+function logout(){
+currentUser="";
+localStorage.removeItem("strako_current_user");
+updateUserUI();
+toast("You have signed out.");
+}
+
 function preorder(){
- if(Date.now()>=new Date(RELEASE_AT).getTime()){showRelease();return}
- if(!currentUser){openAuth();toast("Create an account or sign in to save your free pre-order.");return}
- let orders={};try{orders=JSON.parse(localStorage.getItem("strako_orders")||"{}")}catch(e){}
- orders[currentUser]=orders[currentUser]||[];
- if(!orders[currentUser].includes("gta1"))orders[currentUser].push("gta1");
- localStorage.setItem("strako_orders",JSON.stringify(orders));updateUserUI();
- $("preorderBtn").textContent="PRE-ORDER SAVED ✓";toast("Your free pre-order has been saved on this browser.");
+
+if(Date.now()>=new Date(RELEASE_AT).getTime()){
+showRelease();
+return;
 }
-function gameAction(id){if(id==="gta1"){if(Date.now()>=new Date(RELEASE_AT).getTime())showRelease();else{document.querySelector("#preorders").scrollIntoView({behavior:"smooth"});toast("GRAND THEFT ADVENTURE 1 is available for free pre-order.");}}else toast("This game has not been released yet. Follow STRAKO GAMES for updates.");}
-function showRelease(){$("siteContent").classList.add("hidden");$("releaseScreen").classList.add("active");window.scrollTo(0,0)}
-function showMain(){$("releaseScreen").classList.remove("active");$("siteContent").classList.remove("hidden")}
-function openGamePage(){if(RELEASE_GAME_URL.trim()){window.location.href=RELEASE_GAME_URL}else{toast("Game page URL is not configured yet. Add RELEASE_GAME_URL in the HTML code.");}}
+
+if(!currentUser){
+openAuth();
+toast("Create an account or sign in to save your free pre-order.");
+return;
+}
+
+let orders={};
+
+try{
+orders=JSON.parse(localStorage.getItem("strako_orders")||"{}");
+}catch(e){}
+
+orders[currentUser]=orders[currentUser]||[];
+
+if(!orders[currentUser].includes("gta1")){
+orders[currentUser].push("gta1");
+}
+
+localStorage.setItem("strako_orders",JSON.stringify(orders));
+
+updateUserUI();
+
+$("preorderBtn").textContent="PRE-ORDER SAVED ✓";
+
+toast("Your free pre-order has been saved on this browser.");
+}
+
+function gameAction(id){
+
+if(id==="gta1"){
+
+if(Date.now()>=new Date(RELEASE_AT).getTime()){
+showRelease();
+}else{
+$("preorders").scrollIntoView({behavior:"smooth"});
+toast("GRAND THEFT ADVENTURE 1 is available for free pre-order.");
+}
+
+}else{
+
+toast("This game has not been released yet. Follow STRAKO GAMES for updates.");
+
+}
+}
+
+function showRelease(){
+$("siteContent").classList.add("hidden");
+$("releaseScreen").classList.add("active");
+window.scrollTo(0,0);
+}
+
+function showMain(){
+$("releaseScreen").classList.remove("active");
+$("siteContent").classList.remove("hidden");
+}
+
+function openGamePage(){
+
+if(RELEASE_GAME_URL.trim()){
+window.location.href=RELEASE_GAME_URL;
+}else{
+toast("Game page URL is not configured yet. Add RELEASE_GAME_URL in the HTML code.");
+}
+
+}
+
 function updateCountdown(){
- const diff=new Date(RELEASE_AT).getTime()-Date.now();
- if(diff<=0){$("countdownArea").innerHTML='<div class="notice">THE RELEASE IS LIVE — GRAND THEFT ADVENTURE 1 IS FREE.</div>';$("preorderBtn").textContent="OPEN FREE RELEASE";$("preorderBtn").onclick=showRelease;return}
- const d=Math.floor(diff/86400000),h=Math.floor(diff%86400000/3600000),m=Math.floor(diff%3600000/60000),s=Math.floor(diff%60000/1000);
- $("days").textContent=String(d).padStart(3,"0");$("hours").textContent=String(h).padStart(2,"0");$("minutes").textContent=String(m).padStart(2,"0");$("seconds").textContent=String(s).padStart(2,"0");
+
+const diff=new Date(RELEASE_AT).getTime()-Date.now();
+
+if(diff<=0){
+
+$("countdownArea").innerHTML=
+'<div class="notice">THE RELEASE IS LIVE — GRAND THEFT ADVENTURE 1 IS FREE.</div>';
+
+$("preorderBtn").textContent="OPEN FREE RELEASE";
+$("preorderBtn").onclick=showRelease;
+
+return;
 }
-renderGames();updateUserUI();updateCountdown();setInterval(updateCountdown,1000);
-if(Date.now()>=new Date(RELEASE_AT).getTime()){$("preorderBtn").textContent="OPEN FREE RELEASE";$("preorderBtn").onclick=showRelease;}
+
+const d=Math.floor(diff/86400000);
+const h=Math.floor(diff%86400000/3600000);
+const m=Math.floor(diff%3600000/60000);
+const s=Math.floor(diff%60000/1000);
+
+$("days").textContent=String(d).padStart(3,"0");
+$("hours").textContent=String(h).padStart(2,"0");
+$("minutes").textContent=String(m).padStart(2,"0");
+$("seconds").textContent=String(s).padStart(2,"0");
+}
+
+renderGames();
+updateUserUI();
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+if(Date.now()>=new Date(RELEASE_AT).getTime()){
+$("preorderBtn").textContent="OPEN FREE RELEASE";
+$("preorderBtn").onclick=showRelease;
+}
 </script>
+
 </body>
 </html>
